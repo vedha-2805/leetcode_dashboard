@@ -1,0 +1,19 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  z-index: 1002;
+  animation: notificationSlide 0.3s ease;
+}
+
+.success {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.error {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+}

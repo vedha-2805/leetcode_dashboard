@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1 class="title">LeetCode Analytics <span class="highlight">Dashboard</span></h1>
+            <p class="subtitle">Comprehensive analytics and insights for your coding journey. Track progress, analyze performance, and discover growth opportunities.</p>
+            
+            <div class="controls">
+                <div class="data-source">
+                    <span class="status-indicator"></span>
+                    <span>Data source: Firebase Database (Synced)</span>
+                </div>
+                <button class="btn btn-primary">
+                    <i class="fas fa-chart-bar"></i>
+                    View Analytics
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh Data
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon icon-a">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section A</h3>
+                        <div class="card-value">125</div>
+                        <div class="card-label">Algorithm Problems</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-b">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section B</h3>
+                        <div class="card-value">89</div>
+                        <div class="card-label">Binary Search</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-c">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section C</h3>
+                        <div class="card-value">234</div>
+                        <div class="card-label">Coding Challenges</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-d">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section D</h3>
+                        <div class="card-value">67</div>
+                        <div class="card-label">Dynamic Programming</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-e">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section E</h3>
+                        <div class="card-value">156</div>
+                        <div class="card-label">Easy Problems</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-f">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section F</h3>
+                        <div class="card-value">42</div>
+                        <div class="card-label">Fast Solutions</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-g">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section G</h3>
+                        <div class="card-value">78</div>
+                        <div class="card-label">Graph Algorithms</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-h">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section H</h3>
+                        <div class="card-value">193</div>
+                        <div class="card-label">Hash Tables</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-i">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section I</h3>
+                        <div class="card-value">84</div>
+                        <div class="card-label">Intermediate Level</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-j">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section J</h3>
+                        <div class="card-value">29</div>
+                        <div class="card-label">Java Solutions</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-k">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section K</h3>
+                        <div class="card-value">147</div>
+                        <div class="card-label">Key Concepts</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-l">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section L</h3>
+                        <div class="card-value">203</div>
+                        <div class="card-label">Logic Problems</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-m">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section M</h3>
+                        <div class="card-value">91</div>
+                        <div class="card-label">Medium Problems</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-n">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section N</h3>
+                        <div class="card-value">56</div>
+                        <div class="card-label">Network Flow</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-o">
+                        <i class="fas fa-dot-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section O</h3>
+                        <div class="card-value">112</div>
+                        <div class="card-label">Optimization</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-p">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section P</h3>
+                        <div class="card-value">175</div>
+                        <div class="card-label">Pattern Matching</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon icon-q">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Section Q</h3>
+                        <div class="card-value">68</div>
+                        <div class="card-label">Queue Operations</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

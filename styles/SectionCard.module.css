@@ -1,0 +1,124 @@
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.iconA { background: linear-gradient(45deg, #667eea, #764ba2); }
+.iconB { background: linear-gradient(45deg, #f093fb, #f5576c); }
+.iconC { background: linear-gradient(45deg, #4facfe, #00f2fe); }
+.iconD { background: linear-gradient(45deg, #43e97b, #38f9d7); }
+.iconE { background: linear-gradient(45deg, #fa709a, #fee140); }
+.iconF { background: linear-gradient(45deg, #a8edea, #fed6e3); }
+.iconG { background: linear-gradient(45deg, #ff9a9e, #fecfef); }
+.iconH { background: linear-gradient(45deg, #a18cd1, #fbc2eb); }
+.iconI { background: linear-gradient(45deg, #ffecd2, #fcb69f); }
+.iconJ { background: linear-gradient(45deg, #ff8a80, #ea4c89); }
+.iconK { background: linear-gradient(45deg, #8fd3f4, #84fab0); }
+.iconL { background: linear-gradient(45deg, #d299c2, #fef9d7); }
+.iconM { background: linear-gradient(45deg, #89f7fe, #66a6ff); }
+.iconN { background: linear-gradient(45deg, #fdbb2d, #22c1c3); }
+.iconO { background: linear-gradient(45deg, #e0c3fc, #9bb5ff); }
+.iconP { background: linear-gradient(45deg, #fee140, #fa709a); }
+.iconQ { background: linear-gradient(45deg, #96deda, #50c9c3); }
+
+.cardContent {
+  flex: 1;
+}
+
+.cardContent h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.cardValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.cardLabel {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .cardIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+  
+  .cardValue {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+  
+  .cardIcon {
+    margin-bottom: 0.5rem;
+  }
+}
